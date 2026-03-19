@@ -17,7 +17,7 @@ Le Hacker Infiltré (Voleur) : Durant la première nuit, il peut échanger son i
 L'Analyste de Données (Voyante) : Chaque nuit, elle scanne un joueur pour connaître sa véritable identité réseau.
 
 L'Ingénieure Système (Sorcière) : Elle possède deux scripts uniques : un Correctif pour sauver la victime des Hackers, et un Contre-virus pour éliminer un suspect la nuit. Elle ne peut utiliser chaque script qu'une seule fois par partie.
-+1
+Attention : Cela ne fonctionne que pour un utilisateur piraté pendant la nuit.
 
 L'Agent de Cybersécurité (Chasseur) : S'il est éliminé (par les hackers ou par vote), il a le pouvoir de répliquer en neutralisant immédiatement un autre joueur de son choix.
 
