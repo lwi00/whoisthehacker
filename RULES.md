@@ -1,5 +1,5 @@
 🛡️ WHO'S THE HACKER : Manuel de l'Utilisateur
-
+Minimum de joueurs : 7
 🎯 BUT DU JEU
 Pour les Employés : Éliminer tous les Hackers infiltrés.
 
