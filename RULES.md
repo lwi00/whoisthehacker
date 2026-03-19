@@ -8,7 +8,7 @@ Pour les Hackers : Éliminer tous les Employés du réseau jusqu'à être majori
 📇 LES CARTES DU RÉSEAU
 🔴 Les Menaces
 
-Le Hacker (Loup-Garou) : Chaque nuit, il infiltre et compromet un compte utilisateur. Le jour, il se fait passer pour un Employé pour ne pas être banni.
+Le Hacker (Loup-Garou) : Chaque nuit, il infiltre et compromet un compte utilisateur. Le jour, il se fait passer pour un Employé pour ne pas être banni. À noter que le Hacker ne peut pas de hacker lui même pendant la nuit.
 
 Le Hacker Infiltré (Voleur) : Durant la première nuit, il peut échanger son identité avec l'une des cartes non distribuées. S'il voit deux cartes "Hacker", il est obligé d'en prendre une.
 
