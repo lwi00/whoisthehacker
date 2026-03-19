@@ -16,12 +16,21 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <h1>Who's The Hacker</h1>
-        {state.screen !== 'setup' && (
-          <span className="turn-info">
-            {state.screen === 'gameover' ? 'Partie terminée' :
-              `Tour ${state.turnNumber} — ${state.screen === 'night' ? 'Nuit' : state.screen === 'day' ? 'Jour' : 'Préparation'}`}
-          </span>
-        )}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          {state.screen !== 'setup' && (
+            <span className="turn-info">
+              {state.screen === 'gameover' ? 'Partie terminée' :
+                `Tour ${state.turnNumber} — ${state.screen === 'night' ? 'Nuit' : state.screen === 'day' ? 'Jour' : 'Préparation'}`}
+            </span>
+          )}
+          <button
+            className="btn btn-danger"
+            style={{ fontSize: '0.75rem', padding: '0.4rem 0.8rem' }}
+            onClick={() => { if (confirm('Réinitialiser la partie ?')) dispatch({ type: 'RESET_GAME' }) }}
+          >
+            Réinitialiser
+          </button>
+        </div>
       </header>
 
       <div className="app-main">

@@ -307,6 +307,10 @@ export function gameReducer(state, action) {
       return { ...state, screen: 'reveal' }
     }
 
+    case 'RESET_GAME': {
+      return { ...initialState }
+    }
+
     default:
       return state
   }
