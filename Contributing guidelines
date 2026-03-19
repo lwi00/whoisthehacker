@@ -1,0 +1,28 @@
+Bienvenue et merci de votre intérêt pour Who is the Hacker?, un projet collaboratif axé sur la simulation de cybersécurité et l'évolution de la production par les pairs.
+Vos contributions, qu'elles concernent les données, la conception, la documentation ou le code, sont précieuses. Veuillez suivre les instructions ci-dessous pour une collaboration optimale. 
+
+Structure du Projet
+RULES.md — Manuel utilisateur détaillant les rôles et les phases de maintenance. 
+README.md — Aperçu global du projet.
+
+Comment contribuer
+
+1. Protocole technique
+Créer un fork du dépôt : Créez votre propre copie du dépôt et clonez-la localement. 
+Installation : Assurez-vous de bien comprendre la structure des fichiers de configuration avant toute modification. 
+Branches : Ne travaillez pas directement sur la branche principale. Utilisez des branches thématiques pour chaque modification. 
+
+2. Types de contributions
+Contribution aux données : Ajoutez de nouveaux rôles (Hacker, Analyste, etc.) ou ajustez l'équilibrage des capacités existantes. 
+Contribution au code : Améliorez l'interface du Maître du Jeu ou créez des scripts de validation pour le contenu du jeu. 
+Documentation : Améliorez le README ou contribuez au wiki pour expliquer le gameplay et les concepts de cybersécurité. 
+
+3. Règles de qualité et de suivi
+Ticket d'abord : Avant d'apporter des modifications importantes, ouvrez un ticket (Issue) pour en discuter avec l'équipe. 
+Signez vos contributions : Toutes les contributions doivent être signées de votre nom complet dans le message de commit à des fins de responsabilisation. 
+
+
+Demandes de fusion (Pull Requests) : Une seule demande par ensemble logique de modifications. Assurez-vous que votre branche est à jour avant de soumettre. 
+
+Respect et inclusion
+Nous nous engageons à créer un environnement respectueux, inclusif et collaboratif. Tous les contributeurs doivent respecter le code de conduite du projet.
