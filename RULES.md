@@ -54,3 +54,9 @@ Le Débat : Les survivants discutent pour identifier les Hackers.
 Le Vote : Le joueur désigné par la majorité est banni du réseau (éliminé) et révèle son identité. En cas d'égalité, le Responsable tranche.
 
 Mise en veille : Le réseau s'endort et un nouveau cycle commence.
+
+Règle sur la communication : Un joueur éliminé ne peut plus parler ni donner d'indices, il peut uniquement observer le reste de la partie en silence.
+
+Règle sur l'identité du Hacker : Si le Hacker infiltré est éliminé, il doit révéler son identité immédiatement, mais pas ses complices encore en jeu.
+
+Règle sur les pouvoirs en phase de jour : Aucun pouvoir de rôle ne peut être activé pendant le vote, les capacités spéciales sont réservées à la phase nuit uniquement.
