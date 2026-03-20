@@ -1,0 +1,421 @@
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-card: #111;
+  --bg-surface: #1a1a2e;
+  --green-primary: #00ff41;
+  --green-dim: #0a3d1a;
+  --red: #ff0040;
+  --red-dim: #3d0a1a;
+  --blue: #00d4ff;
+  --blue-dim: #0a1a3d;
+  --text: #e0e0e0;
+  --text-dim: #888;
+  --border: #333;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--green-primary);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  color: var(--green-primary);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.app-header .turn-info {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+}
+
+.app-content {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-mono);
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  background: var(--bg-surface);
+  color: var(--text);
+}
+
+.btn:hover {
+  border-color: var(--green-primary);
+  color: var(--green-primary);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--green-dim);
+  border-color: var(--green-primary);
+  color: var(--green-primary);
+}
+
+.btn-primary:hover {
+  background: var(--green-primary);
+  color: var(--bg-dark);
+}
+
+.btn-danger {
+  background: var(--red-dim);
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.btn-danger:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn-blue {
+  background: var(--blue-dim);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn-blue:hover {
+  background: var(--blue);
+  color: var(--bg-dark);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  color: var(--green-primary);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"],
+select {
+  font-family: var(--font-mono);
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--green-primary);
+}
+
+/* Player selection grid */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+}
+
+.player-btn {
+  font-family: var(--font-mono);
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-surface);
+  color: var(--text);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.player-btn:hover {
+  border-color: var(--green-primary);
+}
+
+.player-btn.selected {
+  border-color: var(--green-primary);
+  background: var(--green-dim);
+  color: var(--green-primary);
+}
+
+.player-btn.dead {
+  opacity: 0.3;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+/* Card image */
+.card-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+}
+
+.card-image.large {
+  width: 180px;
+}
+
+/* Sections */
+.section-title {
+  color: var(--green-primary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Role badge */
+.role-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.role-badge.red {
+  background: var(--red-dim);
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.role-badge.blue {
+  background: var(--blue-dim);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.role-badge.green {
+  background: var(--green-dim);
+  color: var(--green-primary);
+  border: 1px solid var(--green-primary);
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: var(--bg-surface);
+  border: 1px solid var(--green-primary);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal h2 {
+  color: var(--green-primary);
+  margin-bottom: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  justify-content: flex-end;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  color: var(--green-primary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-player {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+  font-size: 0.8rem;
+}
+
+.sidebar-player.dead {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green-primary);
+}
+
+.status-dot.dead {
+  background: var(--red);
+}
+
+/* Phase banner */
+.phase-banner {
+  text-align: center;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.phase-banner.night {
+  background: var(--blue-dim);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.phase-banner.day {
+  background: #3d3d0a;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+}
+
+/* Timer */
+.timer {
+  font-size: 2rem;
+  color: var(--green-primary);
+  text-align: center;
+  padding: 1rem;
+}
+
+.timer.warning {
+  color: var(--red);
+}
+
+/* Role checkbox list */
+.role-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.role-checkbox:hover {
+  border-color: var(--green-primary);
+}
+
+.role-checkbox input {
+  accent-color: var(--green-primary);
+}
+
+.role-checkbox .role-count {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.role-checkbox .role-count button {
+  font-family: var(--font-mono);
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg-dark);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .app-content {
+    padding: 1rem;
+  }
+
+  .player-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
